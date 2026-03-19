@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberHome Control | Robotics Fair</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    <header>
+        <h1>CYBER<span>HOME</span> 2026</h1>
+        <p>IoT Control System via MicroPython</p>
+    </header>
+
+    <main class="dashboard">
+        <div class="card" id="card-12">
+            <div class="icon">🍳</div>
+            <h2>Cocina</h2>
+            <div class="status-indicator" id="status-12">OFF</div>
+            <div class="btn-group">
+                <button class="btn on" onclick="controlLight(12, 'on')">ON</button>
+                <button class="btn off" onclick="controlLight(12, 'off')">OFF</button>
+            </div>
+        </div>
+
+        <div class="card" id="card-18">
+            <div class="icon">🌿</div>
+            <h2>Patio</h2>
+            <div class="status-indicator" id="status-18">OFF</div>
+            <div class="btn-group">
+                <button class="btn on" onclick="controlLight(18, 'on')">ON</button>
+                <button class="btn off" onclick="controlLight(18, 'off')">OFF</button>
+            </div>
+        </div>
+
+        <div class="card" id="card-19">
+            <div class="icon">🛌</div>
+            <h2>Dormitorio</h2>
+            <div class="status-indicator" id="status-19">OFF</div>
+            <div class="btn-group">
+                <button class="btn on" onclick="controlLight(19, 'on')">ON</button>
+                <button class="btn off" onclick="controlLight(19, 'off')">OFF</button>
+            </div>
+        </div>
+    </main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"></script>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
